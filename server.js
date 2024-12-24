@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.get('/',(req,res)=>{
     res.send("Working!!");
 })
-
+console.log("hellow")
 app.post('/submit',(req,res)=>{
   const {name,email,phone,password,message}=req.body;
   const first=new stored({name:name,email:email,phone:phone,password:password,message:message});
